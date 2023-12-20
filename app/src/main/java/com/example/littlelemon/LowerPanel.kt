@@ -74,7 +74,7 @@ fun MenuDish(navController: NavHostController? = null, dish: Dish) {
                         .padding(top = 5.dp, bottom = 5.dp)
                 )
                 Text(
-                    text = "$dish.price",
+                    text = "$${dish.price}",
                     style = MaterialTheme.typography.body2
                 )
             }
