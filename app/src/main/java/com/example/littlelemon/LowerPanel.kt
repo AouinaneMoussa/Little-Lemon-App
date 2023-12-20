@@ -19,6 +19,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.littlelemon.ui.theme.LittleLemonColor
 import java.nio.file.WatchEvent
 
 @Composable
@@ -85,8 +86,10 @@ fun MenuDish(navController: NavHostController? = null, dish: Dish) {
             )
         }
     }
+    //Update the LowerPanel
     Divider(
         modifier = Modifier.padding(start = 8.dp, end = 8.dp),
         thickness = 1.dp,
+        color = LittleLemonColor.yellow
     )
 }
